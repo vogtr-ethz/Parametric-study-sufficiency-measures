@@ -324,7 +324,7 @@ b = Calc_func(0.73, 2300, 65.5, -400, 0.99,10,-200)
 best1 = Calc_func(Living_density_u, Rooms_Unused_u, Living_area_u, Em_emb_new_l, Ren_share_p[-1],t_p[0],Em_Emb_ren_l)
 best2 = Calc_func(Living_density_u, Rooms_Unused_l, Living_area_l, Em_emb_new_l, Ren_share_p[-1],t_p[0],Em_Emb_ren_l)
 
-"""
+
 with open('output.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['Living_density', 'Rooms_Unused', 'Living_area','Ren_share','t_p','Em_Emb_ren','Em_emb_new','Em_Op_old_tot', 'Em_Op_ren_tot', 'Em_Op_new_tot','Em_Emb_ren_tot','Em_Emb_new_tot','Em_Dem_tot','Em_tot', 'Pers_new_build_tot'])
@@ -338,7 +338,7 @@ with open('output.csv', 'w', newline='') as csvfile:
                                 Calc_func_res = Calc_func(Living_density_p[z], Rooms_Unused_p[i], Living_area_p[l],Em_emb_new_p[emb],Ren_share_p[ren],t_p[t_i],Em_emb_ren_p[emb_ren])
                                 writer.writerow([Living_density_p[z], Rooms_Unused_p[i], Living_area_p[l], Ren_share_p[ren],t_p[t_i],Em_emb_ren_p[emb_ren],Em_emb_new_p[emb],Calc_func_res[0],Calc_func_res[1],Calc_func_res[2],Calc_func_res[3],Calc_func_res[4],Calc_func_res[5],Calc_func_res[6],Calc_func_res[7]])
                     
-"""
+
 
 def plot_range(Values_p):
     list = []
